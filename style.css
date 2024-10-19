@@ -1,0 +1,82 @@
+/* General Styles for Navbar */
+.navbar {
+    background-color: gray; /* Navy blue background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    padding: 10px 20px;
+}
+
+.navbar-brand {
+    color: black;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.navbar-toggler {
+    border: solid  ;
+}
+
+.navbar-toggler-icon {
+    color:black;
+}
+
+/* Styles for Navbar Items */
+.nav-link {
+    color: black;
+    font-size: 1.1rem;
+    margin-right: 20px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ffcc00; /* Gold color on hover */
+}
+
+.nav-item .active {
+    color: #ffcc00; /* Highlight active link */
+    font-weight: bold;
+}
+
+/* Dropdown Styles */
+.dropdown-menu {
+    background-color: #0056b3;
+    border: none;
+}
+
+.dropdown-item {
+    color: black;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-item:hover {
+    background-color: #003d80; /* Darker blue on hover */
+    color: #ffcc00;
+}
+
+/* Optional: Right-aligned Logout Button */
+.ml-auto .nav-link {
+    color: #ffcc00;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.ml-auto .nav-link:hover {
+    color: #ffffff;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 992px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .nav-link {
+        margin: 10px 0;
+    }
+
+    .ml-auto {
+        margin-top: 10px;
+    }
+}
